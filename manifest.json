@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "FutekisetuRemoval",
+  "version": "1.0",
+  "description": "Twitterの「不適切なメディア」の警告を消してくれるやつ",
+  "icons": {
+    "512": "icon512.png"
+  },
+  "content_scripts": [{
+    "matches": ["http://twitter.com/*", "https://twitter.com/*"],
+    "js": ["jquery.js", "myscript.js"]
+  }]
+}
